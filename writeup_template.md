@@ -7,16 +7,10 @@ The goals / steps of this project are the following:
 * Reflect on your work in a written report
 
 
-[//]: # (Image References)
+![alt text][image1]
 
-[image1]: ./examples/color_selection.png 
-[image2]: ./examples/blurred_image.png 
-[image3]: ./examples/edge_image.png 
-[image4]: ./examples/grayscale.png 
-[image5]: ./examples/lane_image.png
-[image6]: ./examples/lane_line.png 
-[image7]: ./examples/ROI_image.png 
----
+[image1]: https://github.com/lukadog/udacity-self-driving-lane-line/tree/master/examples/color_selection.png "Logo Title Text 2"
+
 
 ### Reflection
 
@@ -32,45 +26,48 @@ The color selection is performed to remove the background that is in different c
 
 Step 2: Convert the RGB image into grayscale.
 
-![alt text](https://github.com/lukadog/udacity-self-driving-lane-line/tree/master/examples/color_selection.png  "Grayscale")
-
 Grayscale is performed to convert the color image to grayscale image. This is to prepare for the edge detection in subsequent steps.
+
+![alt text](https://github.com/lukadog/udacity-self-driving-lane-line/tree/master/examples/color_selection.png  "Grayscale")
 
 Step 3: Blur the image.
 
 Use Gaussian kernel to blur the image, this is to remove the sharp noises that may affect the edge detection result.
 
+![alt text](https://github.com/lukadog/udacity-self-driving-lane-line/tree/master/examples/color_selection.png  "Grayscale")
+
 Step 4: Edge detection.
 
 Use Canny kernel to detect the edges. Those edges can be later on used for line detection.
+
+![alt text](https://github.com/lukadog/udacity-self-driving-lane-line/tree/master/examples/color_selection.png  "Grayscale")
 
 Step 5: ROI image selection.
 
 Only keep the bottom part of the image where the pavement is usually be so the noises outside the pavement are not considered in the hough transform.
 
+![alt text](https://github.com/lukadog/udacity-self-driving-lane-line/tree/master/examples/color_selection.png  "Grayscale")
+
 Step 6. Hough transform
 
 Hough tranform is performed to detect the straight lines.
+
+![alt text](https://github.com/lukadog/udacity-self-driving-lane-line/tree/master/examples/color_selection.png  "Grayscale")
 
 Step 7. Lane detection by averaging the detected lines.
 
 Toom many lines might be detected in the hough transform, an average operation was performed to reduce the line into two: left line and right line.
 
+![alt text](https://github.com/lukadog/udacity-self-driving-lane-line/tree/master/examples/color_selection.png  "Grayscale")
+
 Step 8. Draw the lines on blank image with green color and thickness = 10
+
+![alt text](https://github.com/lukadog/udacity-self-driving-lane-line/tree/master/examples/color_selection.png  "Grayscale")
 
 Step 9. Overlay the line image with original image to show the final result
 
+![alt text](https://github.com/lukadog/udacity-self-driving-lane-line/tree/master/examples/color_selection.png  "Grayscale")
 
-
-
-
-converted the images to grayscale, then I .... 
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
