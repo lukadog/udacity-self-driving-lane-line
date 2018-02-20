@@ -28,11 +28,11 @@ Step 1: Color filter image.
 
 The color selection is performed to remove the background that is in different color from the lanes.
 
-![alt text][image1]
+![alt text](https://github.com/lukadog/udacity-self-driving-lane-line/tree/master/examples/color_selection.png  "Color Selection")
 
 Step 2: Convert the RGB image into grayscale.
 
-![alt text][image1]
+![alt text](https://github.com/lukadog/udacity-self-driving-lane-line/tree/master/examples/color_selection.png  "Grayscale")
 
 Grayscale is performed to convert the color image to grayscale image. This is to prepare for the edge detection in subsequent steps.
 
