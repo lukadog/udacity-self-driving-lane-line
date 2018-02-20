@@ -7,9 +7,8 @@ The goals / steps of this project are the following:
 * Reflect on your work in a written report
 
 
-![alt text][image1]
+[image1]: \examples\color_selection.png "Logo Title Text 2"
 
-[image1]: https://github.com/lukadog/udacity-self-driving-lane-line/tree/master/examples/color_selection.png "Logo Title Text 2"
 
 
 ### Reflection
