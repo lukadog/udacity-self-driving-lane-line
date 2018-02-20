@@ -164,27 +164,7 @@ def process_image(image):
 
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 out = cv2.VideoWriter('output.avi',fourcc, 15.0, (540, 960))
-# out = cv2.VideoWriter('test.avi', fourcc, 20.0, (540, 960))
-
-# out = cv2.VideoWriter('outpy.avi',cv2.VideoWriter_fourcc('M','J','P','G'), 10, (540, 540))
-
-# white_output = 'test_videos_output/solidWhiteRight.mp4'
-
-# clip = VideoFileClip('test_videos/solidWhiteRight.mp4', video_input)
-# new_clip = clip.fl_image(process_image) #NOTE: this function expects color images!!
-# new_clip.write_videofile(os.path.join('output_videos', video_output), audio=False)
-
-
-# def process_video(video_input, video_output):
-
-#     clip = VideoFileClip(os.path.join("test_videos", video_input))
-#     processed = clip.fl_image(process_image)
-#     processed.write_videofile(os.path.join("output_videos", video_output))
-
-# process_video("solidWhiteRight.mp4", "white.mp4")    
-
-
-cap = cv2.VideoCapture('test_videos/solidYellowLeft.mp4')
+cap = cv2.VideoCapture('test_videos/challenge.mp4')
 
 
 while(cap.isOpened()):
